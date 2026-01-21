@@ -1,0 +1,131 @@
+[
+  {
+    "entity_name": "City Eats Group",
+    "sites": [
+      {
+        "site_name": "Sunrise Diner",
+        "currency": "USD",
+        "businessDates": [
+          {
+            "sale_date": "2025-01-01",
+            "date_of_month": "1",
+            "month_no": "01",
+            "month": "January",
+            "year": 2025,
+            "coverdetails": [
+              {
+                "session": "Breakfast",
+                "revenue_centers": [
+                  {
+                    "revenue_center": "Main Dining",
+                    "covers": 120
+                  }
+                ]
+              }
+            ],
+            "invoices": [
+              {
+                "invoice_number": "INV-5001",
+                "session": "Breakfast",
+                "open_time": "2025-01-01T08:10:00Z",
+                "close_time": "2025-01-01T08:45:00Z",
+                "revenue_center": "Main Dining",
+                "invoice_totals": {
+                  "net": 45.0,
+                  "tax": 3.6,
+                  "gross": 48.6,
+                  "service_charge": 0,
+                  "donation_amount": 0,
+                  "tips": 7.0,
+                  "discount_amount": 0
+                },
+                "lines": [
+                  {
+                    "product_sku": "SKU-101",
+                    "product_name": "Pancake Stack",
+                    "time_of_sale": "2025-01-01T08:15:00Z",
+                    "category_name": "Breakfast",
+                    "quantity": 2,
+                    "net": 20.0,
+                    "tax": 1.6,
+                    "gross": 21.6,
+                    "tax_percent": 8,
+                    "void_details": {
+                      "is_voided": false,
+                      "amount": 0,
+                      "reason": null
+                    }
+                  }
+                ],
+                "payments": [
+                  {
+                    "method": "Card",
+                    "amount": 48.6,
+                    "tips": 7.0
+                  }
+                ],
+                "discounts": [
+                  {
+                    "staff_name": "Ava Lopez",
+                    "amount": 0,
+                    "reason": "None"
+                  }
+                ]
+              }
+            ],
+            "shifts": [
+              {
+                "employee_number": "EMP-001",
+                "employee_name": "Ava Lopez",
+                "business_date": "2025-01-01",
+                "section_name": "Main",
+                "department_name": "FOH",
+                "position_name": "Server",
+                "scheduled_start": "2025-01-01T07:00:00Z",
+                "scheduled_end": "2025-01-01T15:00:00Z",
+                "scheduled_hours": 8,
+                "scheduled_net_shift_cost": 120,
+                "scheduled_holiday_accrual_cost": 8,
+                "scheduled_nic_cost": 6,
+                "scheduled_pension_cost": 5,
+                "scheduled_paid_break": 30,
+                "scheduled_unpaid_break": 0,
+                "clock_in": "2025-01-01T07:05:00Z",
+                "clock_out": "2025-01-01T15:02:00Z",
+                "clocked_hours": 7.9,
+                "clocked_break_duration_in_minutes": 30,
+                "approved_clock_in": "2025-01-01T07:05:00Z",
+                "approved_clock_out": "2025-01-01T15:00:00Z",
+                "approved_hours": 7.9,
+                "approved_net_shift_cost": 118,
+                "approved_holiday_accrual_cost": 8,
+                "approved_nic_cost": 6,
+                "approved_pension_cost": 5,
+                "approved_break_duration_in_minutes": 30,
+                "noshow": false,
+                "pay_type": "Hourly",
+                "status_name": "Approved"
+              }
+            ],
+            "leaves": [
+              {
+                "employee_number": "EMP-002",
+                "employee_name": "Noah Singh",
+                "business_date": "2025-01-01",
+                "leave_cost": 0
+              }
+            ],
+            "employee_bank_holidays": [
+              {
+                "employee_number": "EMP-003",
+                "employee_name": "Maya Chen",
+                "business_date": "2025-01-01",
+                "bank_holiday_cost": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

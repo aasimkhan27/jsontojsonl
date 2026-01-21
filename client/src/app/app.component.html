@@ -1,0 +1,95 @@
+<div class="layout">
+  <aside class="panel">
+    <h2>Conversations</h2>
+    <div class="input-group">
+      <input
+        type="text"
+        placeholder="New conversation title"
+        [(ngModel)]="newConversationTitle"
+      />
+      <button (click)="createConversation()">Create</button>
+    </div>
+    <ul class="list">
+      <li
+        *ngFor="let conversation of conversations; trackBy: trackById"
+        [class.active]="conversation.id === selectedConversation?.id"
+        (click)="selectConversation(conversation)"
+      >
+        <div class="title">{{ conversation.title }}</div>
+        <div class="meta">{{ conversation.created_at | date: 'short' }}</div>
+      </li>
+    </ul>
+
+    <h2>Saved Reports</h2>
+    <ul class="list">
+      <li *ngFor="let report of reports; trackBy: trackById">
+        <div class="title">{{ report.title }}</div>
+        <div class="meta">{{ report.created_at | date: 'short' }}</div>
+        <p class="summary">{{ report.content }}</p>
+      </li>
+    </ul>
+  </aside>
+
+  <main class="chat">
+    <header>
+      <h1>Restaurant Sales Assistant</h1>
+      <p class="subtitle">
+        Ask questions about restaurant performance, then save the conversation as a report.
+      </p>
+    </header>
+
+    <section class="messages">
+      <div *ngIf="!selectedConversation" class="empty-state">
+        Start a new conversation or select one from the left.
+      </div>
+      <div *ngFor="let message of messages; trackBy: trackById" class="message" [class.user]="message.role === 'user'">
+        <span class="role">{{ message.role }}</span>
+        <p>{{ message.content }}</p>
+      </div>
+    </section>
+
+    <section class="composer">
+      <textarea
+        rows="3"
+        placeholder="Ask about totals, trends, or top performers..."
+        [(ngModel)]="newMessage"
+      ></textarea>
+      <button (click)="sendMessage()" [disabled]="isSending">
+        {{ isSending ? 'Sending...' : 'Send' }}
+      </button>
+    </section>
+
+    <section class="report">
+      <h2>Save report from this conversation</h2>
+      <div class="input-group">
+        <input
+          type="text"
+          placeholder="Report title"
+          [(ngModel)]="reportTitle"
+        />
+      </div>
+      <textarea
+        rows="4"
+        placeholder="Summarize insights and next steps"
+        [(ngModel)]="reportContent"
+      ></textarea>
+      <button (click)="saveReport()" [disabled]="!selectedConversation">Save Report</button>
+    </section>
+  </main>
+
+  <aside class="panel info">
+    <h2>Data Highlights</h2>
+    <p>Available restaurants:</p>
+    <ul>
+      <li *ngFor="let restaurant of restaurants">{{ restaurant }}</li>
+    </ul>
+    <div class="tips">
+      <h3>Try asking</h3>
+      <ul>
+        <li>"What is the total sales for Sunrise Diner?"</li>
+        <li>"Show top performing restaurants"</li>
+        <li>"Give me an overall summary"</li>
+      </ul>
+    </div>
+  </aside>
+</div>

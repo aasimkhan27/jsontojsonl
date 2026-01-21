@@ -1,0 +1,58 @@
+[
+  {
+    "entity_name": "City Eats Group",
+    "sites": [
+      {
+        "site_name": "Sunrise Diner",
+        "employees": [
+          {
+            "TITLE": "Ms",
+            "EMPLOYEE_NAME": "Ava Lopez",
+            "EMPLOYEE_NUMBER": "EMP-001",
+            "KNOWN_AS": "Ava",
+            "NATIONALITY": "American",
+            "GENDER": "Female",
+            "DATE_OF_BIRTH": "1995-04-12",
+            "PRIMARY_PHONE": "+1-555-0101",
+            "EMAIL": "ava.lopez@example.com",
+            "POSITION_NAME": "Server",
+            "SECONDARY_PHONE": "",
+            "DEPARTMENT_NAME": "FOH",
+            "JOINING_DATE": "2022-05-10",
+            "PROBATION_END_DATE": "2022-11-10",
+            "TERMINATION_DATE": null,
+            "PRIMARY_REPORTING_MANAGER": "Jordan Lee",
+            "SECONDARY_REPORTING_MANAGER": "Nina Patel",
+            "TERTIARY_REPORTING_MANAGER": "Chris Brown",
+            "PAYSCHEDULE_NAME": "Monthly",
+            "PAY_TYPE": "Hourly",
+            "BRANCH_ID": 101
+          },
+          {
+            "TITLE": "Mr",
+            "EMPLOYEE_NAME": "Noah Singh",
+            "EMPLOYEE_NUMBER": "EMP-002",
+            "KNOWN_AS": "Noah",
+            "NATIONALITY": "Canadian",
+            "GENDER": "Male",
+            "DATE_OF_BIRTH": "1990-08-22",
+            "PRIMARY_PHONE": "+1-555-0102",
+            "EMAIL": "noah.singh@example.com",
+            "POSITION_NAME": "Chef",
+            "SECONDARY_PHONE": "",
+            "DEPARTMENT_NAME": "Kitchen",
+            "JOINING_DATE": "2021-03-08",
+            "PROBATION_END_DATE": "2021-09-08",
+            "TERMINATION_DATE": null,
+            "PRIMARY_REPORTING_MANAGER": "Jordan Lee",
+            "SECONDARY_REPORTING_MANAGER": "Nina Patel",
+            "TERTIARY_REPORTING_MANAGER": "Chris Brown",
+            "PAYSCHEDULE_NAME": "Monthly",
+            "PAY_TYPE": "Salary",
+            "BRANCH_ID": 101
+          }
+        ]
+      }
+    ]
+  }
+]
